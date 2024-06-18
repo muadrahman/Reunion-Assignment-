@@ -1,6 +1,3 @@
-# Readme: E-commerce Database Design and Data Analysis
-
-
 ## Problem 1:  E-commerce Database Design
 
 ### Database Schema Design
