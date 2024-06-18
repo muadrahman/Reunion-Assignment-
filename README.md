@@ -31,10 +31,6 @@
   - Generated order history spanning at least 2 years.
   - Included diverse customer information reflecting different locations.
 
-### Conclusion
-
-This README provides an overview of the e-commerce database schema design, emphasizing clarity in structure and robustness in data handling. For detailed SQL scripts and data generation processes, refer to the attached files in the repository.
-
 ---
 
 ## Problem 2: SQL Concepts (Attached)
