@@ -33,16 +33,23 @@
 
 ---
 
-## Problem 2: SQL Concepts (Attached)
+## Problem 2: SQL Concepts
 
-This section covers SQL queries designed to extract insights from the e-commerce database:
+### 1. Retrieve the top 5 customers who have made the highest average order amounts in the last 6 months.
 
-- Query 1: Retrieve top 5 customers with highest average order amounts in the last 6 months.
-- Query 2: Identify customers whose order value decreased this year compared to the previous year.
-- Query 3: Create a table showing cumulative purchases by a specific customer, segmented by product category.
-- Query 4: List top 5 selling products and their variants by sales volume.
+To identify the top customers based on average order amounts over the last 6 months, we utilize SQL functions to calculate average order amounts per customer. The `Orders`, `OrderItems`, and `Customers` tables are joined to fetch relevant data. This query helps identify valuable customers based on their recent spending patterns.
 
-Refer to the attached SQL files for detailed queries and their execution.
+### 2. Retrieve the list of customers whose order value is lower this year as compared to the previous year.
+
+This query compares the total order value for each customer between the current year and the previous year. It involves subqueries and joins to aggregate order amounts by year and determine which customers have experienced a decline in spending year-over-year. This analysis aids in identifying customers who may need attention or targeted marketing strategies.
+
+### 3. Create a table showing cumulative purchases by a particular customer. Show the breakup of cumulative purchases by product category.
+
+By specifying a particular customer, this query calculates the cumulative purchase amount across all orders placed by that customer. It further breaks down these purchases by product category. This involves joining multiple tables (`OrderItems`, `ProductVariants`, `Products`, and `Categories`) to aggregate and categorize purchase data, providing insights into a customer's buying behavior across different product types.
+
+### 4. Retrieve the list of top 5 selling products. Further bifurcate the sales by product variants.
+
+To determine the top-selling products, this query counts the number of units sold for each product variant. It involves joining `Products` and `ProductVariants` tables with `OrderItems` to aggregate sales data. The query ranks products based on total sales volume and provides a breakdown by product variants, enabling insights into product popularity and performance.
 
 ---
 
